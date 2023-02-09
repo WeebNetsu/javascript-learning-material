@@ -1,0 +1,6 @@
+What is JS
+Installing Node.js (mention that this is an optional step)
+1. Hello World
+2. Comments
+3. Console logging
+4. Variables and Data Types
