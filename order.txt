@@ -5,4 +5,5 @@ Installing Node.js (mention that this is an optional step)
 3. Console logging
 4. Variables and Data Types
 5. Math
-6. Empty Data Types [Math]
+6. Empty Data Types [math]
+7. Functions [if statements, case statements, math, empty data types]
