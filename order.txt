@@ -7,3 +7,4 @@ Installing Node.js (mention that this is an optional step)
 5. Math
 6. Empty Data Types [math]
 7. Functions [if statements, case statements, math, empty data types]
+8. Objects [functions]
