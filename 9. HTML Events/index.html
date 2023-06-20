@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<!-- here you can provide a javascript function to run when the button is clicked -->
+		<button onclick="buttonClick()">Click Me</button>
+
+		<!-- run this js function whenever a key is pressed, and also passing in the element ("this" keyword) -->
+		<input onkeyup="handleInput(this)" />
+
+		<!-- you can write regular javascript in onclick as well -->
+		<button onclick="this.innerHTML = 'Qread423dwad3r4'">
+			Reveal Password
+		</button>
+
+		<!-- you can change CSS styling from the javascript on an element -->
+		<div
+			onmouseover="this.style.backgroundColor = 'red'"
+			onmouseout="this.style.backgroundColor = 'white'"
+		>
+			Hover over me!
+		</div>
+
+		<!-- if this button is double clicked, a popup will appear on screen -->
+		<button ondblclick="alert('Button double-clicked!')">
+			Double Click Me
+		</button>
+
+		<script>
+			function buttonClick() {
+				console.log("Hello World");
+			}
+
+			function handleInput(e) {
+				console.log(e.value);
+			}
+		</script>
+	</body>
+</html>

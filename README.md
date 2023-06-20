@@ -2,6 +2,8 @@
 
 These are all the lessons I created when learning JavaScript, they became my JavaScript course.
 
+The official lessons order can be found inside **order.txt**.
+
 <!-- Watch the crash course:
 
 - [YouTube](https://youtu.be/2bSuuzMwda8)
