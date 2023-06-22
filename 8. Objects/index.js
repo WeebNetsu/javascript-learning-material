@@ -17,7 +17,7 @@ console.log(jack.name)
 // or via bracket notation
 console.log(jack['age'])
 
-// you can also set it, note that objects, even if constant is not
+// you can also set it, note that objects, even if constant, is not
 // entirely immutable
 jack.rich = true
 

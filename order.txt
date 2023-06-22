@@ -9,4 +9,6 @@ Installing Node.js (mention that this is an optional step)
 10. Strings [math]
 7. Functions [if statements, case statements, math, empty data types]
 8. Objects [functions]
+11. Arrays [Objects, Empty Data Types]
+12. Working with Arrays [Arrays, functions]
 9. HTML Events [functions]
