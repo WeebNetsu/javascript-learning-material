@@ -1,5 +1,53 @@
-// you have your regular math operations
+// you have 2 types of numbers, integers and floating point values. Note that
+// in JavaScript, they are merged and both known as a `number`
 
+let a = 10;
+let b = 10.9;
+
+// if you want to know if a number is an integer or a float, you can do this:
+console.log(Number.isInteger(a)) // true = yes
+console.log(Number.isInteger(b)) // false = no
+
+let c = "10.9"; // note that this is a string (text) and not a number
+// you can declare a number like this as well, however, note that the type
+// of d is not the same as a or b, d is an object. We'll learn more about
+// objects in a later tutorial, but just know that d might return unexpected
+// results if you use it. It is advised not to use the below, unless you
+// know what you're doing
+let d = new Number(5);
+
+// you can also use scientific notation
+// the e says generate 0s, the number after e says how many, so this will be 25000
+console.log(25e3);
+// you can also do the opposite, now this will be 0.025 (note we have 1 less 0)
+console.log(25e-3);
+
+// note that whole numbers in JS is accurate until the 15th digit
+let e = 999999999999999;
+let f = 9999999999999999;
+console.log(e); //  999999999999999
+console.log(f); // 10000000000000000
+
+// get the largest safe integer in JS
+console.log(Number.MAX_SAFE_INTEGER)
+// get the largest number in JS
+console.log(Number.MAX_VALUE)
+
+// if you want to know if an integer is safe, then we can use this:
+console.log(Number.isSafeInteger(e)) // true
+console.log(Number.isSafeInteger(f)) // false
+
+// to fix this, we can create a big int
+console.log(9999999999999999n);
+// note that a big int is not the same type as a number, so might yield
+// unexpected results
+
+// you can change how many decimals a float should have
+let g = 3.14159;
+console.log(g.toFixed(2));
+console.log(g.toFixed(4));
+
+// you have your regular math operations
 console.log(10 + 5) // add
 console.log(10 - 5) // subtract
 console.log(10 / 5) // divide
@@ -72,6 +120,12 @@ console.log((10 + 5) * 9) // 135
 // since brackets have no higher order of precedence than multiplication
 // it will first do the brackets then the multiplication
 
+// note that floating point values in JS is not always accurate
+console.log(0.2 + 0.1);
+// the solution to this issue is to always times floating point values by 10
+// then divide it by 10
+console.log((0.2 * 10 + 0.1 * 10) / 10);
+
 // Note with adding strings together:
 console.log("I am " + "cool")
 
@@ -79,3 +133,19 @@ console.log("I am " + "cool")
 // to not throw an error when you mess up, so be careful when doing this
 console.log("10" + 1) // "101"
 console.log("10" - 1) // 9
+
+// it is good to know this, because that means we can understand why
+// the below will not give us the value we expect
+console.log("The answer: " + 5 + 6)
+// but this will
+console.log("The answer: " + (5 + 6))
+
+// you can convert a string (and other data types) to a number with ease:
+let h = "502.33"
+
+console.log(Number(h))
+console.log(typeof Number(h))
+console.log(parseInt(h))
+console.log(typeof parseInt(h))
+console.log(parseFloat(h))
+console.log(typeof parseFloat(h))

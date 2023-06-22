@@ -30,6 +30,10 @@ console.log("What is Jack? " + a + ". And he is " + g + " years old. Also, PI ti
 // we can do this:
 console.log(`What is Jack? ${a}. And he is ${g} years old. Also, PI times 3 is ${Math.PI * 3}`)
 
+// you can convert a number to a string as such:
+console.log(g.toString())
+console.log(typeof g.toString())
+
 // note that indexes starts at 0, not 1
 console.log(c[0]) // returns the character at index 1
 console.log(c[2]) // returns the character at index 2

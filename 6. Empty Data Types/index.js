@@ -13,6 +13,8 @@ console.log(x) // undefined
 
 // will not produce expected result, since undefined is an empty value
 console.log(x + 1);  // NaN
+console.log(10 / "word") // NaN - can't divide by a value that is a string and not a number
+console.log(10 / "2") // 5
 
 // next up we have null. null is the same as undefined, however, null is
 // usually set by the developer instead of JavaScript. As an example:
