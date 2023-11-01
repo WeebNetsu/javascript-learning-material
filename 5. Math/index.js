@@ -8,6 +8,12 @@ let b = 10.9;
 console.log(Number.isInteger(a)) // true = yes
 console.log(Number.isInteger(b)) // false = no
 
+// tutorial note do example with multiple values
+console.log(Math.round(b))
+console.log(Math.ceil(b))
+console.log(Math.floor(b))
+console.log(Math.trunc(b)) // returns only the integer (removes the .9 from 10.9 so it becomes 10)
+
 let c = "10.9"; // note that this is a string (text) and not a number
 // you can declare a number like this as well, however, note that the type
 // of d is not the same as a or b, d is an object. We'll learn more about
@@ -149,3 +155,27 @@ console.log(parseInt(h))
 console.log(typeof parseInt(h))
 console.log(parseFloat(h))
 console.log(typeof parseFloat(h))
+
+console.log(Math.random()) // returns a random number between 0 and 1
+console.log(Math.random() * 10) // returns a random number between 0 and 9
+console.log(Math.floor(Math.random() * 10)) // returns a random number between 0 and 9
+
+console.log(Math.min(0, 150, 30, 20, -8, -200)); // returns smallest of all values
+console.log(Math.max(0, 150, 30, 20, -8, -200)); // returns largest of all values
+
+console.log(Math.sqrt(16)) // get square root of
+console.log(Math.abs(-4.7)) // always returns a positive value of a number
+console.log(Math.sin(10))
+console.log(Math.cos(10))
+console.log(Math.tan(10))
+console.log(Math.log(1))
+// there are a lot more math functions, but for simplicity I don't cover them
+
+console.log(Math.PI) // get PI
+console.log(Math.E)        // Euler's number
+console.log(Math.SQRT2)    // the square root of 2
+console.log(Math.SQRT1_2)  // the square root of 1/2
+console.log(Math.LN2)      // the natural logarithm of 2
+console.log(Math.LN10)     // the natural logarithm of 10
+console.log(Math.LOG2E)    // base 2 logarithm of E
+console.log(Math.LOG10E)   // base 10 logarithm of E
