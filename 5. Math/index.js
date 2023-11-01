@@ -156,6 +156,9 @@ console.log(typeof parseInt(h))
 console.log(parseFloat(h))
 console.log(typeof parseFloat(h))
 
+console.log(NaN) // not a number
+console.log(Number("lol")) // NaN
+
 console.log(Math.random()) // returns a random number between 0 and 1
 console.log(Math.random() * 10) // returns a random number between 0 and 9
 console.log(Math.floor(Math.random() * 10)) // returns a random number between 0 and 9

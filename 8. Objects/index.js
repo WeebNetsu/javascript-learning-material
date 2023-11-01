@@ -5,6 +5,10 @@ const jack = {
     name: "Jack", // called a property
     age: 29,
     rich: false,
+    accounts: {
+        savings: 1900,
+        meds: 12800
+    },
     sayHello: () => console.log("Hello World!")
 }
 
@@ -22,5 +26,9 @@ console.log(jack['age'])
 jack.rich = true
 
 console.log(jack.rich)
+console.log(jack.likes[0])
+console.log(jack.accounts)
+console.log(jack.accounts.meds)
+console.log(jack.socialMedia?.nickname)
 
 jack.sayHello()
