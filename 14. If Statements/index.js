@@ -82,17 +82,17 @@ if (customer === "Mike" || birthday) {
 // if you're only using ONE statement after the if
 if (birthday) console.log("Happy Birthday")
 
-// simmilarly you can also add an else
+// similarly you can also add an else
 if (birthday) console.log("Happy Birthday")
 else console.log("Not birthday")
 
 // you can use if statements to set values
 let salary = 0;
 
-if(age > 20){
+if (age > 20) {
     salary += 5000;
-}else if(birthday){
-    salary == 100;
+} else if (birthday) {
+    salary = 100;
 }
 
 console.log(salary)
@@ -100,11 +100,11 @@ console.log(salary)
 // NOTE: Don't overuse above, most people mess it up when they use it because they forget the ONE statement rule
 
 const number = Number("jack")
-if(isNaN(number)){ // do NOT use number === NaN!
+if (isNaN(number)) { // do NOT use number === NaN!
     console.log("Is not a number")
 }
 
-// Ternary opperator
+// Ternary operator
 const welcomeText = birthday ? "Happy birthday!" : "Welcome!"
 console.log(welcomeText)
 
@@ -113,7 +113,7 @@ console.log(age < 18 ? "You are too young" : "You may enter")
 const nullVal = null;
 const undefVal = undefined;
 
-// null check opperator
+// null check operator
 const a = nullVal ?? 10;
 const b = undefVal ?? 'jack'
 const c = age ?? 90;
