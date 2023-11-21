@@ -15,3 +15,4 @@ Installing Node.js (mention that this is an optional step)
 12. Working with Arrays [Arrays, functions]
 13. Dates [Math, Strings, if Statements]
 9. HTML Events [functions]
+16. Loops [Strings, Arrays, Objects, If statements]
